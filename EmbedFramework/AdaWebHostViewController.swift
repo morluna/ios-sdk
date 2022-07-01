@@ -18,11 +18,21 @@ class AdaWebHostViewController: UIViewController {
          let bundle = Bundle(for: AdaWebHostViewController.self)
          #endif
         
-        let storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: bundle)
+        let storyboard: UIStoryboard
+
+        // Loads the resource_bundle if available (Cocoapod)
+        if (bundle.path(forResource: "AdaEmbedFramework", ofType: "bundle") != nil){
+            let frameworkBundlePath = bundle.path(forResource: "AdaEmbedFramework", ofType: "bundle")!
+            let frameworkBundle = Bundle(path: frameworkBundlePath)
+            storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: frameworkBundle)
+        } else {
+            // Used for if SDK was manually imported
+            storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: bundle)
+        }
 
         guard let viewController = storyboard.instantiateInitialViewController() as? AdaWebHostViewController else { fatalError("This should never, ever happen.")
         }
-        
+
         viewController.webView = webView
         return viewController
     }

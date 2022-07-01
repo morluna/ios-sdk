@@ -103,7 +103,7 @@
 		0334E7B2270E1A1700FC8C7C /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		0334E7B4270E1A1700FC8C7C /* AdaEmbedFramework.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AdaEmbedFramework.podspec.json; sourceTree = "<group>"; };
 		0334E7B6270E1A1700FC8C7C /* ExampleAppCocoapod.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ExampleAppCocoapod.xcodeproj; sourceTree = "<group>"; };
-		0334E7B9270E1A1700FC8C7C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0334E7B9270E1A1700FC8C7C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		0334E7BA270E1A1700FC8C7C /* ExampleAppCocoapod.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ExampleAppCocoapod.xcworkspace; sourceTree = "<group>"; };
 		0334E7BB270E1A1700FC8C7C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		26BCD96559D811599DFCFA56 /* Pods-AdaEmbedFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdaEmbedFramework.release.xcconfig"; path = "Target Support Files/Pods-AdaEmbedFramework/Pods-AdaEmbedFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -394,7 +394,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Ada Support";
 				TargetAttributes = {
 					49C73561226F99FE00D22E4B = {
@@ -564,6 +564,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -627,7 +628,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZRU59KP7YH;
 				INFOPLIST_FILE = ExampleApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
